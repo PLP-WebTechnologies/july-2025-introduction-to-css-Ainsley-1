@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Demonstration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>CSS Demonstration</h1>
+        <nav class="navigation">
+            <a href="#basics" class="nav-link">Basics</a>
+            <a href="#cards" class="nav-link">Cards</a>
+            <a href="#buttons" class="nav-link">Buttons</a>
+            <a href="#sections" class="nav-link">Sections</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="basics" class="content-section">
+            <h2 class="section-heading">Typography & Basic Elements</h2>
+            <p class="intro-text">
+                This demonstration showcases the CSS Box Model in action. Each element has carefully applied 
+                margins, padding, and borders to show how they affect layout and spacing.
+            </p>
+            <p class="regular-text">
+                The box model consists of content, padding, border, and margin. Understanding how these 
+                properties interact is fundamental to creating well-structured layouts.
+            </p>
+            <h3 class="sub-heading">Key Concepts</h3>
+            <p class="highlight-text">
+                Content defines the actual text or media inside an element, while padding creates space 
+                between the content and border. Margins create space outside the border.
+            </p>
+        </section>
+
+        <section id="cards" class="content-section">
+            <h2 class="section-heading">Card Components</h2>
+            <div class="card-container">
+                <div class="card primary-card">
+                    <h4 class="card-title">Primary Card</h4>
+                    <p class="card-text">
+                        This card demonstrates how padding creates internal spacing while margins 
+                        separate it from other elements.
+                    </p>
+                </div>
+                <div class="card secondary-card">
+                    <h4 class="card-title">Secondary Card</h4>
+                    <p class="card-text">
+                        Notice how the border adds visual definition and the background color 
+                        helps visualize the box boundaries.
+                    </p>
+                </div>
+                <div class="card accent-card">
+                    <h4 class="card-title">Card</h4>
+                    <p class="card-text">
+                        Different padding values create varied internal spacing, affecting 
+                        the overall feel and readability of the content.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="buttons" class="content-section">
+            <h2 class="section-heading">Button Styling</h2>
+            <div class="button-group">
+                <button class="btn primary-btn">Primary Action</button>
+                <button class="btn secondary-btn">Secondary Action</button>
+                <button class="btn outline-btn">Outlined Button</button>
+                <button class="btn large-btn">Large Button</button>
+            </div>
+            <p class="button-description">
+                These buttons demonstrate how padding affects clickable area, while margins 
+                control spacing between interactive elements.
+            </p>
+        </section>
+
+        <section id="sections" class="content-section">
+            <h2 class="section-heading">Layout Sections</h2>
+            
+            <div class="layout-demo">
+                <div class="box-model-visual">
+                    <div class="margin-box">
+                        <div class="border-box">
+                            <div class="padding-box">
+                                <div class="content-box">
+                                    CONTENT
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="explanation-box">
+                    <h4>Box Model Visualization</h4>
+                    <ul class="model-list">
+                        <li><strong>Blue:</strong> Margin area (transparent)</li>
+                        <li><strong>Green:</strong> Border area</li>
+                        <li><strong>Orange:</strong> Padding area</li>
+                        <li><strong>Red:</strong> Content area</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section full-width-section">
+            <h2 class="section-heading">Full Width Section</h2>
+            <p class="centered-text">
+                This section spans the full width of its container and demonstrates how 
+                different margin and padding combinations create various layout effects.
+            </p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p class="footer-text">
+            &copy; 2025 CSS Box Model Demonstration. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
